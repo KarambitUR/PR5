@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контрольна робота</title>
+    <link href="https://fonts.googleapis.com/css?family=Font1" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Font2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Font3" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Font1", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: "Font1", sans-serif;
+            font-size: 1.2em;
+        }
+
+        h2 {
+            font-family: "Font2", sans-serif;
+            font-size: 1.1em;
+        }
+
+        h3 {
+            font-family: "Font1", sans-serif;
+            font-size: 1em;
+        }
+
+        p {
+            font-family: "Font3", sans-serif;
+            font-size: 0.9em;
+        }
+
+        .block {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .block h2 {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            width: 200px;
+            text-align: center;
+            margin: 0; /* Додано для вирівнювання тексту внутрішніх h2 */
+        }
+
+        .block1 h2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .block2 h2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .block3 h2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .block4 h2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .block p {
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 320px; /* Змінено на максимальну ширину, щоб уникнути розтягнення */
+        }
+
+        @media (max-width: 768px) {
+            .block {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 992px) {
+            .block {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 993px) and (max-width: 1200px) {
+            .block {
+                width: 33.33%;
+            }
+        }
+
+        @media (min-width: 1201px) {
+            .block {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Контрольна робота</h1>
+    <ul>
+        <li>Квецко Михайло Іванович
+            <ul>
+                <li>Варіант 1</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="block block1">
+        <h2>Текст</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod odio nec condimentum bibendum. Nulla facilisi. Mauris et lectus erat. Donec ultrices lorem non lectus eleifend, a efficitur lorem fringilla. Sed non tristique metus, a commodo massa. Vivamus dictum elit a tortor ultricies, in ultricies quam dictum. Vivamus accumsan tellus ut ex dapibus, a finibus massa pharetra. Quisque sed metus a nunc dapibus malesuada.</p>
+    </div>
+
+    <div class="block block2">
+        <h2>Список</h2>
+        <ul>
+            <li>Хліб</li>
+            <li>Масло</li>
+            <li>Мінеральна вода</li>
+            <li>Крупи:
+                <ul>
+                    <li>Гречка</li>
+                    <li>Рис</li>
+                    <li>Манка</li>
+                </ul>
+            </li>
+            <li>Макарони</li>
+        </ul>
+    </div>
+
+    <div class="block block3">
+        <h2>Таблиця</h2>
+        <table>
+            <tr>
+                <th>Країна</th>
+                <th>Населення</th>
+            </tr>
+            <tr>
+                <td>Німеччина</td>
+                <td>83,02 млн. ос.</td>
+            </tr>
+            <tr>
+                <td>Чехія</td>
+                <td>10,69 млн. ос.</td>
+            </tr>
+            <tr>
+                <td>Франція</td>
+                <td>66,8 млн. ос.</td>
+            </tr>
+            <tr>
+                <td>Бельгія</td>
+                <td>11,46 млн. ос.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="block block4">
+        <h2>Зображення</h2>
+        <img src="https://place-hold.it/300x500?text=New%20Text&italic=true" alt="Зображення">
+    </div>
+
+    <p>Посилання на зображення: <a href="https://place-hold.it/300x500?text=New%20Text&italic=true" target="_blank">https://place-hold.it/</a></p>
+</body>
+</html>
